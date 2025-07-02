@@ -15,10 +15,10 @@
          <table border="1"; style="margin-left: auto; margin-right: auto;">
             <tr>
              <td>Unidade</td>   
-             <td>Tipo Colegiado</td> 
+             <td>FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA</td> 
             </tr>
             <tr>
-             <td>FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA</td>  
+             <td>Tipo Colegiado</td>  
              <td>CONGREGAÇAO</td> 
             </tr>
          </table>
@@ -31,22 +31,51 @@
         <div style="font-family: 'Times New Roman', Times, serif;">
             <form action="">
                 <fieldset>
-                    <h3>Órgão Colegiado</h3>
+                    <p>Órgão Colegiado</p>
                 </fieldset>
 
-                <fieldset style="text-align: center;">
-                        Nome: <input type="text" name="nome" value="CONGREGAÇÃO DA FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA" style="width: fit-content;">
-                
+                <fieldset>
+                        Nome: <input type="text" value="CONGREGAÇÃO DA FACULDADE DE ENGENHARIA DE ILHA SOLTEIRA" size="70">
+                        <table>
+                            <tr>
+                                <td>Sigla: <input type="text" value="CFIS" size="7"></td>
+                                <td>
+                                    Status: <select>
+                                        <option value="ATIVADO">ATIVADO</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Data Ativação: <input type="text" value="15/10/2000" size="7"></td>
+                                <td>Data Desativação: <input type="text" size="7"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Órgão de Origem: <input type="text" size="30"></td>
+                                <td><button>Buscar</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>Órgão Superior: <input type="text" size="32"></td>
+                                <td><button>Buscar</button></td>
+                            </tr>
+                        </table>
+                        
+                        <label for="documentacao">Documentação</label>
+                        <br>
+                        <textarea id="documentacao" style="width: 100%;">Órgão criado com o objetivo de aprovar normas da unidade.</textarea>
+                        <div style="height: 16px;"></div>
+                        <div style="display: flex; justify-content: center; gap: 20px;">
+                            <button>Salvar</button>
+                            <button>Excluir</button>
+                        </div>
                 </fieldset>
-
-
             </form>
+
+            <br>
+            <button style="margin-left: 60px;">Retomar</button>
         </div>
-
-
-
-
     </main>
-    
 </body>
 </html>
