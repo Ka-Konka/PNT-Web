@@ -19,6 +19,14 @@ header {
     padding: 30px;
 }
 
+.bigger-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 200%;
+    color: aliceblue;
+    background-color: #36484e;
+    padding: 20px;
+}
+
 main {
     background-color: #94b5c0;
     padding: 10px;
@@ -45,13 +53,6 @@ article {
     color:  aliceblue;
 }
 
-#aside_img {
-    width: 50%;
-    height: auto;
-    background-color: #94b5c0;
-    padding: 10px;
-}
-
 footer {
     background-color: #5f767e;
     text-align: center;
@@ -67,7 +68,13 @@ footer {
 .article-flex aside {
     flex-shrink: 0;
     width: 40%;
-    
+}
+
+#aside_img {
+    width: 100%;
+    height: auto;
+    background-color: #94b5c0;
+    padding: 10px;
 }
 
 .general-list {
@@ -80,24 +87,34 @@ footer {
     gap: 30px;
 }
 
-.links {
+a {
     text-decoration: none;
     color: aliceblue;
 }
 
-.flex-contato {
+.flex-general {
     display: flex;
-   
+    justify-content: space-between;
+    width: 100%;
+    gap: 0;
 }
 
-.flex-contato > div{
-    flex-direction: row;
-    gap: 24px;
-    align-items: center;  
+.flex-general > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.flex-contato img {
+.flex-general img {
     width: 30%;
-    background-color:#94b5c0;
+    background-color: #94b5c0;
     padding: 10px;
+}
+
+.sobre-paragraph{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    margin-left: 10px;
+    font-size: 150%;
+    text-align: center;
 }
